@@ -1,0 +1,32 @@
+### Get all comments
+GET http://localhost:8000/api/comments
+Accept: application/json
+
+### Get a specific comment by ID
+GET http://localhost:8000/api/comments/1
+Accept: application/json
+
+### Create a new comment
+POST http://localhost:8000/api/comments
+Content-Type: application/json
+
+{
+  "post_id": 1,
+  "content": "Nothing"
+}
+
+### Update a comment
+PUT http://localhost:8000/api/comments/1
+Content-Type: application/json
+
+{
+  "content": "Updated comment content."
+}
+
+### Delete a comment
+DELETE http://localhost:8000/api/comments/1
+Accept: application/json
+
+### Get comments with 'A' for a specific post
+GET http://localhost:8000/api/posts/1/comments-with-a
+Accept: application/json

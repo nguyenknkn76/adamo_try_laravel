@@ -1,0 +1,29 @@
+### Get all students
+GET http://localhost:8000/api/students
+Accept: application/json
+
+### Get a specific student by ID
+GET http://localhost:8000/api/students/1
+Accept: application/json
+
+### Create a new student
+POST http://localhost:8000/api/students
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "courses": [1, 2]
+}
+
+### Update a student
+PUT http://localhost:8000/api/students/1
+Content-Type: application/json
+
+{
+  "name": "John Smith",
+  "courses": [1]
+}
+
+### Delete a student
+DELETE http://localhost:8000/api/students/1
+Accept: application/json

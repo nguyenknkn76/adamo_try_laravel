@@ -1,0 +1,29 @@
+### Get all courses
+GET http://localhost:8000/api/courses
+Accept: application/json
+
+### Get a specific course by ID
+GET http://localhost:8000/api/courses/1
+Accept: application/json
+
+### Create a new course
+POST http://localhost:8000/api/courses
+Content-Type: application/json
+
+{
+  "name": "Mathematics",
+  "students": [1, 2]
+}
+
+### Update a course
+PUT http://localhost:8000/api/courses/1
+Content-Type: application/json
+
+{
+  "name": "Advanced Mathematics",
+  "students": [1]
+}
+
+### Delete a course
+DELETE http://localhost:8000/api/courses/1
+Accept: application/json

@@ -1,0 +1,14 @@
+### try call api from third party - DICTIONARY API
+GET http://localhost:8000/api/try-call-api/sorry
+Accept: application/json
+
+
+### try send SMS
+POST  http://localhost:8000/api/try-send-sms
+Accept: application/json
+Content-Type: application/json
+
+{
+    "phone": "+84981757692",
+    "otp": "111222"
+}

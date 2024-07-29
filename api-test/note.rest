@@ -1,0 +1,38 @@
+@token = Bearer 21|31hMniKJ6hWSiiv4mtICPwJzrlemECrevzptvA6Xb7f2b7d5
+# @token = Bearer 7|PhSiO3ogm69hjCeFFh1pAGToCljPfH6eDgRZkmRy2ae3acb6
+### Get all posts
+GET http://localhost:8000/api/notes
+Accept: application/json
+Authorization: {{token}}
+
+### Get a specific post by ID
+GET http://localhost:8000/api/notes/3
+Accept: application/json
+Authorization: {{token}}
+
+### Create Note 
+POST http://localhost:8000/api/notes
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+{
+  "content": 888,
+  "important": true,
+  "user_id": 3
+}
+
+### Update a note
+PUT http://localhost:8000/api/notes/3
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "content": "Hello Post Title"
+}
+
+### Delete a post
+DELETE http://localhost:8000/api/notes/14
+Accept: application/json
+# Authorization: {{token}}
+

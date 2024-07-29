@@ -1,0 +1,19 @@
+### Send OTP
+POST http://localhost:8000/api/send-otp
+Content-Type: application/json
+
+{
+  "email": "khoi@gmail.com"
+}
+
+### Verify OTP and Reset Password
+POST http://localhost:8000/api/verify-otp
+Content-Type: application/json
+
+{
+  "email": "khoi@gmail.com",
+  "otp": "491277",
+  "password": "newpassword",
+  "password_confirmation": "newpassword"
+}
+

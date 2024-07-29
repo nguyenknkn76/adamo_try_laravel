@@ -1,0 +1,24 @@
+### Import cities
+POST http://localhost:8000/api/import-cities
+Content-Type: application/json
+
+{
+  "cities" : [
+    {"id":"3041563","name":"Andorra la Vella","country":"AD","admin1":"Andorra la Vella","lat":"42.5077900","lon":"1.5210900","pop":"20430"},
+    {"id":"3041519","name":"Arinsal","country":"AD","admin1":"La Massana","lat":"42.5720500","lon":"1.4845300","pop":"1419"},
+    {"id":"3041204","name":"Canillo","country":"AD","admin1":"Canillo","lat":"42.5676000","lon":"1.5975600","pop":"3292"},
+    {"id":"3039154","name":"El Tarter","country":"AD","admin1":"Canillo","lat":"42.5795200","lon":"1.6536200","pop":"1052"},
+    {"id":"3040686","name":"Encamp","country":"AD","admin1":"Encamp","lat":"42.5347400","lon":"1.5801400","pop":"11223"}
+  ]
+}
+
+### Import cities
+POST http://localhost:8000/api/import-cities2
+Content-Type: application/json
+
+{
+  "file_path": "public/cities500.json"
+}
+
+# "Projects/fdemo/storage/app/public/cities500.json"
+

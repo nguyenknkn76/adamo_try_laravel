@@ -1,0 +1,29 @@
+### Get all profiles
+GET http://localhost:8000/api/profiles
+Accept: application/json
+
+### Get a specific profile by ID
+GET http://localhost:8000/api/profiles/1
+Accept: application/json
+
+### Create a new profile
+POST http://localhost:8000/api/profiles
+Content-Type: application/json
+
+{
+  "user_id": 3,
+  "address": "Long Bien",
+  "phone_number": "555-555-5555"
+}
+
+### Update a profile
+PUT http://localhost:8000/api/profiles/1
+Content-Type: application/json
+
+{
+  "address": "456 Elm St"
+}
+
+### Delete a profile
+DELETE http://localhost:8000/api/profiles/1
+Accept: application/json
